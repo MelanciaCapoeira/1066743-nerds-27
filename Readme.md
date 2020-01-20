@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Анатолий Симонов](https://up.htmlacademy.ru/htmlcss/27/user/1066743).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус] (https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
