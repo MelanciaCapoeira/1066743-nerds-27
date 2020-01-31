@@ -10,6 +10,7 @@
   <body>
     <header>
       <nav>
+        <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="логотип нёрдс"></a>
         <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
@@ -18,48 +19,106 @@
           </ul>
           <button type="button">Корзина</button>
         </nav>
-        <a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="логотип нёрдс"></a>
         <h1>Магазин готовых шаблонов</h1> <!-- где правильно размещать заголовки? --> 
     </header>
     <main>
+      <div class="sort">
+        <button type="button">По цене</button>
+        <button type="button">По типу</button>
+        <button type="button">По названию</button>
+        <button type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию"></button>
+        <button type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию"></button>
+      </div>
+      <div class="filters">
+        <form action="#" method="get">
+         <div class="price_filter">
+           <h4>Стоимость:</h4>          
+           <input type="range" name="price" id="price">
+           <label>от <input type="number" name="price_min" id="price_min" value="0" min="0"></label>
+           <label>до <input type="number" name="price_max" id="price_max" value="15000"></label>
+          </div>
+          <div class="markup_filter">
+           <h4>Сетка:</h4>
+           <label>
+           <input type="radio" name="markup_filter" id="markup_filter1" value="Адаптивная" checked>
+           Адаптивная</label>
+           <label>
+           <input type="radio" name="markup_filter" id="markup_filter2" value="Фиксированная">
+           Фиксированная</label>
+           <label>
+           <input type="radio" name="markup_filter" id="markup_filter3" value="Резиновая">
+           Резиновая</label>
+          </div>
+          <div class="features">
+            <h4>Особенности:</h4>
+            <label>
+            <input type="checkbox" name="slider" id="slider-check" checked>
+            Слайдер</label>
+            <label>
+            <input type="checkbox" name="features" id="features-check">
+            Блок преимуществ</label>
+            <label>
+            <input type="checkbox" name="news" id="news-check" checked>
+            Новости</label>
+            <label>
+            <input type="checkbox" name="gallery" id="gallery-check">
+            Галерея</label>
+            <label>
+            <input type="checkbox" name="bascket" id="bascket-check">
+            Корзина</label>
+          </div>
+          <input type="submit" value="Показать">          
+        </form>          
+      </div>
       <section class="main_area">
         <ul>
           <li>
+            <article>
             <a href="#"><img src="img/img-sedona.jpg.jpg" alt="Шаблон sedona" width="360" height="576"></a>
             <h3>Sedona</h3>
-            <p>Информационный сайт<br> 
-               для туристов</p>
-            <button type="button">9 900 Руб.</button>   
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 Руб.</button>
+            </article>   
           </li>
           <li>
+            <article>
             <a href="#"><img src="img/img-pink.jpg.jpg" alt="Шаблон pink" width="360" height="576"></a>
             <h3>Pink App</h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <button type="button">9 900 Руб.</button>
+            </article>
           </li>
           <li>
+            <article>
             <a href="#"><img src="img/img-barbershop.jpg.jpg" alt="Шаблон Барбершоп Бородинский" width="360" height="576"></a>
             <h3>Barbershop</h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <button type="button">9 900 Руб.</button>
+            </article>
           </li>
           <li>
+            <article>
             <a href="#"><img src="img/img-mishka.jpg.jpg" alt="Шаблон mishka" width="360" height="576"></a>
             <h3>MISHKA</h3>
             <p>Интернет-магазин  вязаных игрушек</p>
             <button type="button">9 900 Руб.</button>
+            </article>
           </li>
           <li>
+            <article>
             <a href="#"><img src="img/img-aplus.jpg.jpg" alt="Шаблон а плюс" width="360" height="576"></a>
             <h3>A Plus</h3>
             <p>Лендинг курсов повышения квалификации</p>
             <button type="button">9 900 Руб.</button>
+            </article>
           </li>
           <li>
+            <article>
             <a href="#"><img src="img/img-kvast.jpg.jpg" alt="Шаблон кваст " width="360" height="576"></a>
             <h3>КВАСТ</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
             <button type="button">9 900 Руб.</button>
+            </article>
           </li>       
         </ul>
       </section>
@@ -83,7 +142,7 @@
     </main>
     <footer>
       <div class="map">
-        <a href="https://goo.gl/maps/bCr8AcauumHxSemm8" target="_blank"><img src="img/map.png" alt="местонахождение нёрдс" width="1440" height="416"></a>
+        <a href="https://goo.gl/maps/bCr8AcauumHxSemm8" target="_blank"><img src="img/map.jpg" alt="местонахождение нёрдс" width="1440" height="416"></a>
         <a href="https://goo.gl/maps/bCr8AcauumHxSemm8" target="_blank"><img src="img/map-marker.png" alt="нёрдс" width="231" height="190"></a>
         <div class="map_frame">
           <p>NЁRDS DESIGN STUDIO</p>
@@ -105,5 +164,23 @@
         </div>
       </div>    
     </footer>
+    <div class="write_us"> <!-- write us -->
+      <h3>Напишите нам</h3>
+      <form action="#" method="POST">
+        <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" required autofocus>
+        </p>
+        <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+        </p>
+        <p>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" rows="4" cols="50" placeholder="В свободной форме"></textarea>
+        </p>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
   </body>
 </html>
