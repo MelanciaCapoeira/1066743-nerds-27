@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Контакты</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+  <body>
+    <header class="top_menu"> <!-- top menu -->
+      <nav class="main_navigation">
+        <div class="header_logo">
+          <a class="logo_link" href="index.html"><img class="img_logo" src="img/nerds-logo.svg" width="160" height="65" alt="логотип нёрдс"></a>
+        </div>
+        <ul class="site_navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li class="here"><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="user_navigation">
+          <a href="basket.html"><img class="img_basket" src="img/cart-icon.svg" alt="Корзина" width="63" height="63"></a>
+          <a href="basket.html">Корзина</a>
+        </div>
+      </nav>
+      <div class="background_title">
+        <h1>Контакты</h1>
+      </div>
+    </header>
+    <main>
+        <div class="empty_block">
+        </div>
+    </main>
+  <footer class="footer">
+    <div class="map"> <!-- contacts -->
+      <a class="img_map" href="https://goo.gl/maps/bCr8AcauumHxSemm8" target="_blank"><img src="img/map.jpg" alt="местонахождение нёрдс" width="1440" height="416"></a>
+      <a class="map_marker" href="https://goo.gl/maps/bCr8AcauumHxSemm8" target="_blank"><img src="img/map-marker.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="231" height="190"></a>
+      <div class="map_frame">
+        <p class="title_frame">NЁRDS DESIGN STUDIO</p>
+        <p class="adress">191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p class="tel">тел. <a class="tel" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        <button class="button btn_map red" type="button"><span class="btn_text">Напишите нам</span></button>
+      </div>
+    </div>
+    <div class="footer_bottom"> <!-- social media footer -->
+      <div class="social">
+        <div class="social_circle">
+         <a href="#" target="_blank"><img class="social_icon_vk" src="img/vk-icon.png" alt="нёрдс в VK" width="26" height="15"></a>
+        </div>
+        <div class="social_circle">
+          <a href="#" target="_blank"><img class="social_icon_fb" src="img/fb-icon.svg" alt="нёрдс в FB" width="12" height="22"></a>
+        </div>
+        <div class="social_circle">
+          <a href="#" target="_blank"><img class="social_icon_insta" src="img/insta-icon.png" alt="нёрдс в Instagram" width="21" height="21"></a>
+        </div>
+      </div>
+      <div class="special_offer">
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>    
+  </footer>
+  <div class="write_us"> <!-- write us -->
+    <div class="inner_write_us">
+    <h3>Напишите нам</h3>
+    <button class="write_us_close" type="button">
+      <img class="close_cross" src="img/close-cross.svg" alt="закрыть">
+    </button>
+    <form class="write_us_form" action="#" method="POST">
+      <div class="form_input_flex">
+        <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" required autofocus>
+        </p>
+        <p>
+        <label for="e-mail">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+        </p>
+        <p>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <input class="button btn_write_us red" type="submit" value="Отправить">
+    </form>
+      </div>
+    </div>
+</body>
+</html>
