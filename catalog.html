@@ -17,40 +17,36 @@
         <ul class="site_navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li class="here"><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="current"><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <div class="user_navigation">
-          <a href="basket.html"><img class="img_basket" src="img/cart-icon.svg" alt="Корзина" width="63" height="63"></a>
-          <a href="basket.html">Корзина</a>
-        </div>
+        <ul class="user_navigation">
+          <li class="basket"><a href="#">Корзина</a></li>
+        </ul>
       </nav>
       <div class="background_title">
         <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main>
-      <div class="sort">
-        <div class="sort_title">
-          <p>Сортировать:</p>
-        </div>
-        <div class="sort_list">
-          <button class="btn_sort" type="button">По цене</button>
-          <button class="btn_sort" type="button">По типу</button>
-          <button class="btn_sort" type="button">По названию</button>
-          <button class="btn_sort" type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию"></button>
-          <button class="btn_sort" type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию"></button>
-        </div>
-      </div>
-    <div class="inner_main">  
+    <main class="main_catalog">
       <div class="filters">
-        <form action="#" method="get">
-         <div class="price_filter">
-           <h4>Стоимость:</h4>          
-           <input type="range" name="price" id="price">
-           <label>от <input type="number" name="price_min" id="price_min" value="0" min="0"></label>
-           <label>до <input type="number" name="price_max" id="price_max" value="15000"></label>
-          </div>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter_item">
+            <legend>Стоимость:</legend>
+            <div class="range_filter">
+              <div class="range_controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle_min"></div>
+                <div class="toggle toggle_max"></div>
+              </div>
+              <div class="price_controls">
+                <label class="min_price">от <input name="min_price" type="number" value="0"></label>
+                <label class="max_price">до <input name="max_price" type="number" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
           <div class="markup_filter">
            <h4>Сетка:</h4>
            <label>
@@ -84,72 +80,121 @@
           <input type="submit" value="Показать">          
         </form>          
       </div>
-      <section class="main_area">
-        <h2 class="visually-hidden">Готовые шаблоны</h2>
-        <ul>
-          <li>
-            <article class="goods">
-            <a href="#"><img src="img/img-sedona.jpg.jpg" alt="Шаблон sedona" width="360" height="576"></a>
-            <div class="card">
-              <h3 class="title_card">Sedona</h3>
-              <p class="discription_card">Информационный сайт для туристов</p>
-              <button class="button btn_card red" type="button">9 900 Руб.</button>
-            </div>
-            </article>   
-          </li>
-          <li>
-            <article class="goods">
-            <a href="#"><img src="img/img-pink.jpg.jpg" alt="Шаблон pink" width="360" height="576"></a>
-            <div class="card">
-              <h3 class="title_card">Pink App</h3>
-              <p class="discription_card">Продуктовый лендинг приложения для iOS и Android</p>
-              <button class="button btn_card red" type="button">9 900 Руб.</button>
-            </div>
-            </article>
-          </li>
-          <li>
-            <article class="goods">
-            <a href="#"><img src="img/img-barbershop.jpg.jpg" alt="Шаблон Барбершоп Бородинский" width="360" height="576"></a>
-            <div class="card">
-              <h3 class="title_card">Barbershop</h3>
-              <p class="discription_card">Сайт салона красоты. Для мужчин, да.</p>
-              <button class="button btn_card red" type="button">9 900 Руб.</button>
-            </div>
-            </article>
-          </li>
-          <li>
-            <article class="goods">
-            <a href="#"><img src="img/img-mishka.jpg.jpg" alt="Шаблон mishka" width="360" height="576"></a>
-            <div class="card">
-              <h3 class="title_card">MISHKA</h3>
-              <p class="discription_card">Интернет-магазин  вязаных игрушек</p>
-              <button class="button btn_card red" type="button">9 900 Руб.</button>
-            </div>
-            </article>
-          </li>
-          <li>
-            <article class="goods">
-            <a href="#"><img src="img/img-aplus.jpg.jpg" alt="Шаблон а плюс" width="360" height="576"></a>
-            <div class="card">
-              <h3 class="title_card">A Plus</h3>
-              <p class="discription_card">Лендинг курсов повышения квалификации</p>
-             <button class="button btn_card red" type="button">9 900 Руб.</button>
-             </div>
-            </article>
-          </li>
-          <li>
-            <article class="goods">
-            <a href="#"><img src="img/img-kvast.jpg.jpg" alt="Шаблон кваст " width="360" height="576"></a>
-            <div class="card">
-              <h3 class="title_card">КВАСТ</h3>
-              <p class="discription_card">Промо-сайт производителя крафтового кваса</p>
-              <button class="button btn_card red" type="button">9 900 Руб.</button>
-            </div>
-            </article>
-          </li>       
-        </ul>
-      </section>
-    </div>
+      <div class="inner_main">
+        <div class="sort">
+          <div class="sort_title">
+            <p>Сортировать:</p>
+          </div>
+          <div class="sort_list">
+            <button class="btn_sort" type="button">По цене</button>
+            <button class="btn_sort" type="button">По типу</button>
+            <button class="btn_sort" type="button">По названию</button>
+            <button class="btn_sort" type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию"></button>
+            <button class="btn_sort" type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию"></button>
+          </div>
+        </div>
+        <section class="main_area">
+          <h2 class="visually-hidden">Готовые шаблоны</h2>
+          <ul>
+            <li>
+              <div class="goods">
+                <div class="top_stripe">
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                </div>
+                <img src="img/img-sedona.jpg.jpg" alt="Шаблон sedona" width="360" height="576">
+                <div class="card">
+                  <h3 class="title_card">Sedona</h3>
+                  <p class="discription_card">Информационный сайт для туристов</p>
+                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                </div>
+              </div>   
+            </li>
+            <li>
+              <div class="goods">
+                <div class="top_stripe">
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                </div>
+                <img src="img/img-pink.jpg.jpg" alt="Шаблон pink" width="360" height="576">
+                <div class="card">
+                  <h3 class="title_card">Pink App</h3>
+                  <p class="discription_card">Продуктовый лендинг приложения для iOS и Android</p>
+                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="goods">
+                <div class="top_stripe">
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                </div>
+                <img src="img/img-barbershop.jpg.jpg" alt="Шаблон Барбершоп Бородинский" width="360" height="576">
+                <div class="card">
+                  <h3 class="title_card">Barbershop</h3>
+                  <p class="discription_card">Сайт салона красоты. Для мужчин, да.</p>
+                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="goods">
+                <div class="top_stripe">
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                </div>
+                <img src="img/img-mishka.jpg.jpg" alt="Шаблон mishka" width="360" height="576">
+                <div class="card">
+                  <h3 class="title_card">MISHKA</h3>
+                  <p class="discription_card">Интернет-магазин  вязаных игрушек</p>
+                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="goods">
+                <div class="top_stripe">
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                </div>
+                <img src="img/img-aplus.jpg.jpg" alt="Шаблон а плюс" width="360" height="576">
+                <div class="card">
+                  <h3 class="title_card">A Plus</h3>
+                  <p class="discription_card">Лендинг курсов повышения квалификации</p>
+                <button class="button btn_card red" type="button">9 900 Руб.</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="goods">
+                <div class="top_stripe">
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                  <div class="circle_white"></div>
+                </div>
+                <img src="img/img-kvast.jpg.jpg" alt="Шаблон кваст " width="360" height="576">
+                <div class="card">
+                  <h3 class="title_card">КВАСТ</h3>
+                  <p class="discription_card">Промо-сайт производителя крафтового кваса</p>
+                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                </div>
+              </div>
+            </li>       
+          </ul>
+        </section>
+        <div class="buttons_pages">
+          <a class="current_page" href="#1">1</a>
+          <a href="#2">2</a>
+          <a href="#3">3</a>
+          <a class="next" href="#next">Следующая</a>
+        </div>
+      </div>      
     </main>
     <footer class="footer">
       <div class="map"> <!-- contacts -->
