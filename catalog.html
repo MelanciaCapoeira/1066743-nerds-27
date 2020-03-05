@@ -47,8 +47,8 @@
               </div>
             </div>
           </fieldset>
-          <div class="markup_filter">
-           <h4>Сетка:</h4>
+          <fieldset class="markup_filter">
+           <legend>Сетка:</legend>
            <label>
            <input type="radio" name="markup_filter" id="markup_filter1" value="Адаптивная" checked>
            Адаптивная</label>
@@ -58,9 +58,9 @@
            <label>
            <input type="radio" name="markup_filter" id="markup_filter3" value="Резиновая">
            Резиновая</label>
-          </div>
-          <div class="features">
-            <h4>Особенности:</h4>
+          </fieldset>
+          <fieldset class="features">
+            <legend>Особенности:</legend>
             <label>
             <input type="checkbox" name="slider" id="slider-check" checked>
             Слайдер</label>
@@ -76,7 +76,7 @@
             <label>
             <input type="checkbox" name="bascket" id="bascket-check">
             Корзина</label>
-          </div>
+          </fieldset>
           <input type="submit" value="Показать">          
         </form>          
       </div>
@@ -89,13 +89,15 @@
             <button class="btn_sort" type="button">По цене</button>
             <button class="btn_sort" type="button">По типу</button>
             <button class="btn_sort" type="button">По названию</button>
-            <button class="btn_sort" type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию"></button>
-            <button class="btn_sort" type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию"></button>
+            <div class="btn_direction">
+              <button class="btn_sort" type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию"></button>
+              <button class="btn_sort" type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию"></button>
+            </div>
           </div>
         </div>
         <section class="main_area">
           <h2 class="visually-hidden">Готовые шаблоны</h2>
-          <ul>
+          <ul class="list_goods">
             <li>
               <div class="goods">
                 <div class="top_stripe">
@@ -232,7 +234,7 @@
       <button class="write_us_close" type="button">
         <img class="close_cross" src="img/close-cross.svg" alt="закрыть">
       </button>
-      <form class="write_us_form" action="#" method="POST">
+      <form class="write_us_form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form_input_flex">
           <p>
           <label for="name">Ваше имя:</label>

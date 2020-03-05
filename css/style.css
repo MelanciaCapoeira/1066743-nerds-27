@@ -53,6 +53,7 @@ a {
     color: #000000;
     opacity: 0.3;
     text-transform: uppercase;
+    padding: 0;
 }
 
 .btn_sort:hover {
@@ -193,12 +194,11 @@ a {
     content: "";
     width: 15px;
     height: 15px;
-    background-image: url(img/cart-icon.svg);
+    background-image: url(../img/cart-icon.svg);
     background-repeat: no-repeat;
-  
-    background-color: red;
+    background-color: transparent;
     position: absolute;
-    left: -30px;
+    left: -40px;
     top: 6px;
 }
 
@@ -433,10 +433,6 @@ a {
 
 .partners img:active {
     opacity: 0.1;
-}
-
-.footer {
-    padding-top: 80px;
 }
 
 .map {
@@ -690,15 +686,16 @@ a {
 
 .main_catalog {
     display: flex;
+    justify-content: space-between;
 }
 
 .sort {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 60px;
     width: 760px;
-    padding-inline-start: 40px;
 }
+
 .sort_title p {
     text-transform: uppercase;
     font-size: 18px;
@@ -706,6 +703,21 @@ a {
     font-weight: 700;
     color: #000000;
     margin: 0;
+}
+
+.sort_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 360px;
+}
+
+.btn_direction {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40px;
+
 }
 
 .inner_main {
@@ -719,12 +731,16 @@ a {
 
 .filters {
     width: 260px;
-    margin: 0 auto;
+    margin: 0 0 0 140px;
+}
+
+.list_goods li {
+    display: block;
 }
 
 .goods {
     position: relative;
-    margin-bottom: 73px;
+    margin-bottom: 26px;
 }
 
 .goods:hover .card {
@@ -737,6 +753,8 @@ a {
     justify-content: space-between;
     width: 760px;
     list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 56px;
 }
 
 .top_stripe {
@@ -809,11 +827,10 @@ a {
 }
 
 .filter_item {
-    margin: 0;
     padding: 0;
     border: none;
     width: 260px;
-    margin: 50px auto; 
+    margin: 54px auto; 
 }
   
 .range_filter {
@@ -821,11 +838,16 @@ a {
     margin-top: 49px;
 }
   
-.filter_item legend {
+.filters legend {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     text-transform: uppercase;
     font-weight: 700;
+    color: #000000;
+}
+
+.filters legend:first-child {
+    letter-spacing: 0.18px;
 }
   
 .range_controls {
@@ -908,6 +930,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: none;
+    padding: 0;
 }
 
 .markup_filter {
@@ -927,11 +951,13 @@ a {
 }
 
 .buttons_pages {
-    padding-left: 40px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .buttons_pages a {
-    display: inline-block;
+    display: block;
     min-width: 50px;
     height: 50px;
     font-size: 16px;
@@ -948,7 +974,7 @@ a {
 }
 
 .buttons_pages .next {
-    min-width: 254px;
+    min-width: 260px;
 }
 
 .buttons_pages a:hover {
