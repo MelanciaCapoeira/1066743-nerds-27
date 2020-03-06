@@ -49,35 +49,47 @@
           </fieldset>
           <fieldset class="markup_filter">
            <legend>Сетка:</legend>
-           <label>
-           <input type="radio" name="markup_filter" id="markup_filter1" value="Адаптивная" checked>
-           Адаптивная</label>
-           <label>
-           <input type="radio" name="markup_filter" id="markup_filter2" value="Фиксированная">
-           Фиксированная</label>
-           <label>
-           <input type="radio" name="markup_filter" id="markup_filter3" value="Резиновая">
-           Резиновая</label>
+           <ul>
+            <li class="filter_options">
+              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="adaptive" id="adaptive-radio" value="Адаптивная" checked>
+              <label for="adaptive-radio">Адаптивная</label>
+            </li>
+            <li class="filter_options">
+              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="fixed" id="fixed-radio" value="Фиксированная">
+              <label for="fixed-radio">Фиксированная</label>
+            </li>
+            <li class="filter_options">
+              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="streach" id="streach-radio" value="Резиновая">
+              <label for="streach-radio">Резиновая</label>
+            </li>
+           </ul>
           </fieldset>
           <fieldset class="features">
             <legend>Особенности:</legend>
-            <label>
-            <input type="checkbox" name="slider" id="slider-check" checked>
-            Слайдер</label>
-            <label>
-            <input type="checkbox" name="features" id="features-check">
-            Блок преимуществ</label>
-            <label>
-            <input type="checkbox" name="news" id="news-check" checked>
-            Новости</label>
-            <label>
-            <input type="checkbox" name="gallery" id="gallery-check">
-            Галерея</label>
-            <label>
-            <input type="checkbox" name="bascket" id="bascket-check">
-            Корзина</label>
+            <ul>
+              <li class="filter_options">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="slider" id="slider-check" checked>
+                <label for="slider-check">Слайдер</label>
+              </li>
+              <li class="filter_options">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="features" id="features-check">
+                <label for="features-check">Блок преимуществ</label>
+              </li>
+              <li class="filter_options">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="news" id="news-check" checked>
+                <label for="news-check">Новости</label>
+              </li>
+              <li class="filter_options">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="gallery" id="gallery-check">
+                <label for="gallery-check">Галерея</label>
+              </li>
+              <li class="filter_options">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="bascket" id="bascket-check">
+                <label for="bascket-check">Корзина</label>
+              </li>
+            </ul>
           </fieldset>
-          <input type="submit" value="Показать">          
+          <input class="button btn_filters" type="submit" value="Показать">          
         </form>          
       </div>
       <div class="inner_main">
@@ -86,11 +98,11 @@
             <p>Сортировать:</p>
           </div>
           <div class="sort_list">
-            <button class="btn_sort" type="button">По цене</button>
+            <button class="btn_sort current_sort" type="button">По цене</button>
             <button class="btn_sort" type="button">По типу</button>
             <button class="btn_sort" type="button">По названию</button>
             <div class="btn_direction">
-              <button class="btn_sort" type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию"></button>
+              <button class="btn_sort current_sort" type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию"></button>
               <button class="btn_sort" type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию"></button>
             </div>
           </div>
@@ -105,7 +117,7 @@
                   <div class="circle_white"></div>
                   <div class="circle_white"></div>
                 </div>
-                <img src="img/img-sedona.jpg.jpg" alt="Шаблон sedona" width="360" height="576">
+                <img src="img/img-sedona-jpg.jpg" alt="Шаблон sedona" width="360" height="576">
                 <div class="card">
                   <h3 class="title_card">Sedona</h3>
                   <p class="discription_card">Информационный сайт для туристов</p>
@@ -120,7 +132,7 @@
                   <div class="circle_white"></div>
                   <div class="circle_white"></div>
                 </div>
-                <img src="img/img-pink.jpg.jpg" alt="Шаблон pink" width="360" height="576">
+                <img src="img/img-pink-jpg.jpg" alt="Шаблон pink" width="360" height="576">
                 <div class="card">
                   <h3 class="title_card">Pink App</h3>
                   <p class="discription_card">Продуктовый лендинг приложения для iOS и Android</p>
@@ -135,7 +147,7 @@
                   <div class="circle_white"></div>
                   <div class="circle_white"></div>
                 </div>
-                <img src="img/img-barbershop.jpg.jpg" alt="Шаблон Барбершоп Бородинский" width="360" height="576">
+                <img src="img/img-barbershop-jpg.jpg" alt="Шаблон Барбершоп Бородинский" width="360" height="576">
                 <div class="card">
                   <h3 class="title_card">Barbershop</h3>
                   <p class="discription_card">Сайт салона красоты. Для мужчин, да.</p>
@@ -150,7 +162,7 @@
                   <div class="circle_white"></div>
                   <div class="circle_white"></div>
                 </div>
-                <img src="img/img-mishka.jpg.jpg" alt="Шаблон mishka" width="360" height="576">
+                <img src="img/img-mishka-jpg.jpg" alt="Шаблон mishka" width="360" height="576">
                 <div class="card">
                   <h3 class="title_card">MISHKA</h3>
                   <p class="discription_card">Интернет-магазин  вязаных игрушек</p>
@@ -165,7 +177,7 @@
                   <div class="circle_white"></div>
                   <div class="circle_white"></div>
                 </div>
-                <img src="img/img-aplus.jpg.jpg" alt="Шаблон а плюс" width="360" height="576">
+                <img src="img/img-aplus-jpg.jpg" alt="Шаблон а плюс" width="360" height="576">
                 <div class="card">
                   <h3 class="title_card">A Plus</h3>
                   <p class="discription_card">Лендинг курсов повышения квалификации</p>
@@ -180,7 +192,7 @@
                   <div class="circle_white"></div>
                   <div class="circle_white"></div>
                 </div>
-                <img src="img/img-kvast.jpg.jpg" alt="Шаблон кваст " width="360" height="576">
+                <img src="img/img-kvast-jpg.jpg" alt="Шаблон кваст " width="360" height="576">
                 <div class="card">
                   <h3 class="title_card">КВАСТ</h3>
                   <p class="discription_card">Промо-сайт производителя крафтового кваса</p>
@@ -207,7 +219,7 @@
           <p class="adress">191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
           <p class="tel">тел. <a class="tel" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <button class="button btn_map red" type="button"><span class="btn_text">Напишите нам</span></button>
+          <button class="button btn_map red" type="button">Напишите нам</button>
         </div>
       </div>
       <div class="footer_bottom"> <!-- social media footer -->
