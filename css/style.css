@@ -98,6 +98,7 @@ a {
 .btn_text {
     display: inline-block;
     padding-top: 16px;
+    vertical-align: middle;
 }
 
 .button:active {
@@ -197,6 +198,7 @@ a {
 .site_navigation li,
 .user_navigation li {
     position: relative;
+    max-width: 100px;
 }
 
 .user_navigation .basket::before {
@@ -247,6 +249,7 @@ a {
 }
 
 .welcome_slide {
+    position: relative;
     display: none;
     flex-direction: row;
     justify-content: space-between;
@@ -255,8 +258,22 @@ a {
     margin: 0 auto;
 }
 
-.welcome_slide img {
-    margin-right: 31px;
+.img_slide1 {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+}
+
+.img_slide2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.img_slide3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .inner_block {
@@ -265,6 +282,7 @@ a {
 }
 
 .inner_block h4 {
+    width: 520px;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -298,9 +316,9 @@ a {
     cursor: pointer;
 }
 
-#product-1:checked ~ .welcome_slide #slide1,
-#product-2:checked ~ .welcome_slide #slide2,
-#product-3:checked ~ .welcome_slide #slide3 {
+#product-1:checked ~ .list_slide #slide1,
+#product-2:checked ~ .list_slide #slide2,
+#product-3:checked ~ .list_slide #slide3 {
   display: flex;
 }
 
@@ -339,7 +357,26 @@ a {
 .apps a:first-of-type,
 .presentations a:first-of-type {
     display: block;
-    max-height: 146px;
+    width: 300px;
+    min-height: 146px;
+}
+
+.web img,
+.apps img,
+.presentations img {
+    vertical-align: bottom;
+}
+
+.web a:first-of-type {
+    background-color: #fb565a;
+}
+
+.apps a:first-of-type {
+    background-color: #00ca74;
+}
+
+.presentations a:first-of-type {
+    background-color: #efc84a;
 }
 
 .studio {
@@ -465,7 +502,12 @@ a {
     align-items: center;
     flex-basis: 260px;
     text-align: center;
-    vertical-align: bottom;
+    vertical-align: bottom; 
+}
+
+.partners_logo:first-child,
+.partners_logo:last-child {
+    padding-top: 10px;
 }
 
 .partners_logo::before {
@@ -474,7 +516,7 @@ a {
     left: 40px;
     width: 2px;
     height: 52px;
-    background-color: #eeeeee;
+    background-color: blue;
 }
 
 .partners img {
@@ -520,8 +562,8 @@ a {
     background-color: #ffffff;
 }
 
-.map_frame p {
-    margin-left: 50px;
+.map_frame p:not(.title_frame) {
+    margin-left: 51px;
 }
 
 .title_frame {
@@ -529,7 +571,7 @@ a {
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-    margin: 49px 0 24px 50px;
+    margin: 50px 0 22px 50px;
 }
 
 .adress,
@@ -537,6 +579,10 @@ a {
     text-decoration: none;
     line-height: 18px;
     color: #666666;
+}
+
+.tel {
+    margin-top: 19px;
 }
 
 .footer {
@@ -853,14 +899,19 @@ a {
     bottom: 0;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-between;  
     width: 360px;
     min-height: 231px;
     background-color: #eeeeee;
 }
 
+.card a {
+    display: block;
+}
+
 .title_card {
+    margin: 0;
+    margin-top: 28px;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -879,9 +930,11 @@ a {
 }
 
 .discription_card {
+    margin: 0;
+    margin-bottom: 18px;
     color: #666666;
     line-height: 18px;
-    width: 225px;
+    width: 180px;
     text-align: center;
 }
 
@@ -1089,27 +1142,25 @@ a {
 .price_controls label {
     display: inline-block;
     width: 50%;
-    
     font-size: 16px;
     text-transform: uppercase;
+    vertical-align: middle;
 }
   
-  .price_controls input {
+.price_controls input {
     width: 60px;
     padding: 10px;
     margin-left: 10px;
-    
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     text-align: center;
     color: #283136;
-    
     border: none;
     border-radius: 5px;
     background: #eeeeee;
 }
   
-  .max_price {
+.max_price {
     text-align: right;
 }
 
