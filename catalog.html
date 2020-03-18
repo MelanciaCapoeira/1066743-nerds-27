@@ -5,23 +5,23 @@
     <title>Магазин готовых шаблонов</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-css.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   </head>
   <body>
     <header class="top_menu"> <!-- top menu -->
       <nav class="main_navigation">
         <div class="header_logo">
-          <a class="logo_link" href="index.html"><img class="img_logo" src="img/nerds-logo.svg" width="160" height="65" alt="логотип нёрдс"></a>
+          <a class="logo_link" href="index.html" aria-label="главная страница"><img class="img_logo" src="img/nerds-logo.svg" width="160" height="65" alt="логотип нёрдс"></a>
         </div>
         <ul class="site_navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li class="current"><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#" aria-label="Студия">Студия</a></li>
+          <li><a href="#" aria-label="Клиенты">Клиенты</a></li>
+          <li class="current"><a href="catalog.html" aria-label="Магазин">Магазин</a></li>
+          <li><a href="#" aria-label="Контакты">Контакты</a></li>
         </ul>
         <ul class="user_navigation">
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li class="basket"><a href="#" aria-label="Корзина">Корзина</a></li>
         </ul>
       </nav>
       <div class="background_title">
@@ -43,8 +43,8 @@
                 <div class="toggle toggle_max"></div>
               </div>
               <div class="price_controls">
-                <label class="min_price">от <input name="min_price" type="number" value="0"></label>
-                <label class="max_price">до <input name="max_price" type="number" value="15000"></label>
+                <label class="min_price">от <input name="min_price" type="number" value="0" aria-label="минимальная стоимость"></label>
+                <label class="max_price">до <input name="max_price" type="number" value="15000" aria-label="максимальная стоимость"></label>
               </div>
             </div>
           </fieldset>
@@ -52,15 +52,15 @@
            <legend>Сетка:</legend>
            <ul>
             <li class="filter_options">
-              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="markup" id="adaptive-radio" value="Адаптивная" checked>
+              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="markup" id="adaptive-radio" value="Адаптивная" aria-label="отобрать Адаптивная" checked>
               <label for="adaptive-radio">Адаптивная</label>
             </li>
             <li class="filter_options">
-              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="markup" id="fixed-radio" value="Фиксированная">
+              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="markup" id="fixed-radio" value="Фиксированная" aria-label="отобрать Фиксированная">
               <label for="fixed-radio">Фиксированная</label>
             </li>
             <li class="filter_options">
-              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="markup" id="streach-radio" value="Резиновая">
+              <input class="visually-hidden filter_input filter_input_radio" type="radio" name="markup" id="streach-radio" value="Резиновая" aria-label="отобрать Резиновая">
               <label for="streach-radio">Резиновая</label>
             </li>
            </ul>
@@ -69,28 +69,28 @@
             <legend>Особенности:</legend>
             <ul>
               <li class="filter_options">
-                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="slider" id="slider-check" checked>
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="slider" id="slider-check" aria-label="чекбокс слайдер" checked>
                 <label for="slider-check">Слайдер</label>
               </li>
               <li class="filter_options">
-                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="features" id="features-check">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="features" id="features-check" aria-label="чекбокс Блок преимуществ">
                 <label for="features-check">Блок преимуществ</label>
               </li>
               <li class="filter_options">
-                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="news" id="news-check" checked>
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="news" id="news-check" aria-label="чекбокс Новости" checked>
                 <label for="news-check">Новости</label>
               </li>
               <li class="filter_options">
-                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="gallery" id="gallery-check">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="gallery" id="gallery-check" aria-label="чекбокс Галерея">
                 <label for="gallery-check">Галерея</label>
               </li>
               <li class="filter_options">
-                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="bascket" id="bascket-check">
+                <input class="visually-hidden filter_input filter_input_checkbox" type="checkbox" name="bascket" id="bascket-check" aria-label="чекбокс Корзина">
                 <label for="bascket-check">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <input class="button btn_filters" type="submit" value="Показать">          
+          <input class="button btn_filters" type="submit" value="Показать" aria-label="показать результат">          
         </form>          
       </div>
       <div class="inner_main">
@@ -100,13 +100,13 @@
           </div>
           <div class="sort_list">
             <div class="sort_type">
-              <button class="btn_sort current_sort" type="button">По цене</button>
-              <button class="btn_sort" type="button">По типу</button>
-              <button class="btn_sort" type="button">По названию</button>
+              <button class="btn_sort current_sort" type="button" aria-label="сортировать по цене">По цене</button>
+              <button class="btn_sort" type="button" aria-label="сортировать по типу">По типу</button>
+              <button class="btn_sort" type="button" aria-label="сортировать по названию">По названию</button>
             </div>
             <div class="btn_direction">
-              <button class="btn_sort current_sort" type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию" width="11" height="10"></button>
-              <button class="btn_sort" type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию" width="11" height="10"></button>
+              <button class="btn_sort current_sort" type="button" aria-label="сортировать по убыванию"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию" width="11" height="10"></button>
+              <button class="btn_sort" type="button" aria-label="сортировать по возрастанию"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию" width="11" height="10"></button>
             </div>
           </div>
         </div>
@@ -121,9 +121,9 @@
                 </div>
                 <img src="img/img-sedona-jpg.jpg" alt="Шаблон sedona" width="360" height="576">
                 <div class="card">
-                  <a class="title_card_url" href="#"><h3 class="title_card">Sedona</h3></a>
+                  <a class="title_card_url" href="#" aria-label="карточка товара Sedona"><h3 class="title_card">Sedona</h3></a>
                   <p class="discription_card">Информационный сайт для туристов</p>
-                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                  <button class="button btn_card red" type="button" aria-label="карточка товара Sedona">9 900 Руб.</button>
                 </div>   
             </li>
             <li class="goods">
@@ -134,9 +134,9 @@
                 </div>
                 <img src="img/img-pink-jpg.jpg" alt="Шаблон pink" width="360" height="576">
                 <div class="card">
-                  <a class="title_card_url" href="#"><h3 class="title_card">Pink App</h3></a>
+                  <a class="title_card_url" href="#" aria-label="карточка товара Pink App"><h3 class="title_card">Pink App</h3></a>
                   <p class="discription_card">Продуктовый лендинг приложения для iOS и Android</p>
-                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                  <button class="button btn_card red" type="button" aria-label="карточка товара Pink App">9 900 Руб.</button>
                 </div>
             </li>
             <li class="goods">
@@ -147,9 +147,9 @@
                 </div>
                 <img src="img/img-barbershop-jpg.jpg" alt="Шаблон Барбершоп Бородинский" width="360" height="576">
                 <div class="card">
-                  <a class="title_card_url" href="#"><h3 class="title_card">Barbershop</h3></a>
+                  <a class="title_card_url" href="#" aria-label="карточка товара Barbershop"><h3 class="title_card">Barbershop</h3></a>
                   <p class="discription_card">Сайт салона красоты. Для мужчин, да.</p>
-                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                  <button class="button btn_card red" type="button" aria-label="карточка товара Barbershop">9 900 Руб.</button>
                 </div>
             </li>
             <li class="goods">
@@ -160,9 +160,9 @@
                 </div>
                 <img src="img/img-mishka-jpg.jpg" alt="Шаблон mishka" width="360" height="576">
                 <div class="card">
-                  <a class="title_card_url" href="#"><h3 class="title_card">MISHKA</h3></a>
+                  <a class="title_card_url" href="#" aria-label="карточка товара MISHKA"><h3 class="title_card">MISHKA</h3></a>
                   <p class="discription_card">Интернет-магазин вязаных игрушек</p>
-                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                  <button class="button btn_card red" type="button" aria-label="карточка товара MISHKA">9 900 Руб.</button>
                 </div>
             </li>
             <li class="goods">
@@ -173,9 +173,9 @@
                 </div>
                 <img src="img/img-aplus-jpg.jpg" alt="Шаблон а плюс" width="360" height="576">
                 <div class="card">
-                  <a class="title_card_url" href="#"><h3 class="title_card">A Plus</h3></a>
+                  <a class="title_card_url" href="#" aria-label="карточка товара A Plus"><h3 class="title_card">A Plus</h3></a>
                   <p class="discription_card">Лендинг курсов повышения квалификации</p>
-                <button class="button btn_card red" type="button">9 900 Руб.</button>
+                <button class="button btn_card red" type="button" aria-label="карточка товара A Plus">9 900 Руб.</button>
                 </div>
             </li>
             <li class="goods">
@@ -186,80 +186,80 @@
                 </div>
                 <img src="img/img-kvast-jpg.jpg" alt="Шаблон кваст " width="360" height="576">
                 <div class="card">
-                  <a class="title_card_url" href="#"><h3 class="title_card">КВАСТ</h3></a>
+                  <a class="title_card_url" href="#" aria-label="карточка товара КВАСТ"><h3 class="title_card">КВАСТ</h3></a>
                   <p class="discription_card">Промо-сайт производителя крафтового кваса</p>
-                  <button class="button btn_card red" type="button">9 900 Руб.</button>
+                  <button class="button btn_card red" type="button" aria-label="карточка товара КВАСТ">9 900 Руб.</button>
                 </div>
             </li>       
           </ul>
         </section>
         <div class="buttons_pages">
-          <a class="current_page" href="#1">1</a>
-          <a href="#2">2</a>
-          <a href="#3">3</a>
-          <a class="next" href="#next">Следующая</a>
+          <a class="current_page" href="#1" aria-label="страница 1">1</a>
+          <a href="#2" aria-label="страница 2">2</a>
+          <a href="#3" aria-label="страница 3">3</a>
+          <a class="next" href="#next" aria-label="Следующая страница">Следующая</a>
         </div>
       </div>
       </div>
       <div class="map"> <!-- contacts -->
-        <img class="img_map" src="img/map.jpg" alt="местонахождение нёрдс" width="1440" height="416">
-        <img class="map_marker" src="img/map-marker.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="231" height="190">
+        <img class="img_map" src="img/map.jpg" alt="местонахождение нёрдс" width="1440" height="416" aria-label="открыть карту">
+        <img class="map_marker" src="img/map-marker.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="231" height="190" aria-label="открыть карту">
         <div class="map_frame">
           <p class="title_frame">NЁRDS DESIGN STUDIO</p>
           <address class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <button class="button btn_map red" type="button">Напишите нам</button>
+          <button class="button btn_map red" type="button" aria-label="открыть форму обратной связи">Напишите нам</button>
         </div>
       </div>
     </main>
     <footer class="footer">
-        <div class="social">
-          <div class="social_circle">
-           <a href="#" target="_blank"><img class="social_icon_vk" src="img/vk-icon.svg" alt="нёрдс в VK" width="26" height="15"></a>
-          </div>
-          <div class="social_circle">
-            <a href="#" target="_blank"><img class="social_icon_fb" src="img/fb-icon.svg" alt="нёрдс в FB" width="12" height="22"></a>
-          </div>
-          <div class="social_circle">
-            <a href="#" target="_blank"><img class="social_icon_insta" src="img/insta-icon.svg" alt="нёрдс в Instagram" width="21" height="21"></a>
-          </div>
-        </div>
-        <div class="special_offer">
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>  
-    </footer>
-    <div class="write_us">
-      <div class="inner_write_us">
-      <h3>Напишите нам</h3>
-      <button class="write_us_close" type="button">
-        <img class="close_cross" src="img/close-cross.svg" alt="закрыть" width="21" height="21">
-      </button>
-      <form class="write_us_form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="form_input_flex">
-          <p>
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Имя Фамилия" autofocus>
-          </p>
-          <p>
-          <label for="e-mail">Ваш e-mail:</label>
-          <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-          </p>
-          <p>
-          <label for="message">Текст письма:</label>
-          <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-          </p>
-        </div>
-        <input class="button btn_write_us red" type="submit" value="Отправить">
-      </form>
-        </div>
-      </div>
-      <div class="popup_map" id="map">
-        <button class="popup_map_close" type="button">
-          <img class="close_cross" src="img/close-cross.svg" alt="закрыть" width="21" height="21">
-        </button>
-      </div>
-  <script src="js/script.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=b249c6a3-d9e8-484d-a0fc-a2df922ca1fc&lang=ru_RU"></script>
+      <div class="social">
+         <div class="social_circle">
+          <a href="#" target="_blank" aria-label="мы в вконтакте"><img class="social_icon_vk" src="img/vk-icon.svg" alt="нёрдс в VK" width="26" height="15"></a>
+         </div>
+         <div class="social_circle">
+           <a href="#" target="_blank" aria-label="мы в фэйсбуке"><img class="social_icon_fb" src="img/fb-icon.svg" alt="нёрдс в FB" width="12" height="22"></a>
+         </div>
+         <div class="social_circle">
+           <a href="#" target="_blank" aria-label="мы в инстаграм"><img class="social_icon_insta" src="img/insta-icon.svg" alt="нёрдс в Instagram" width="21" height="21"></a>
+         </div>
+       </div>
+       <div class="special_offer">
+         <p>Давайте дружить, это выгодно!</p>
+         <p>Скидка 10% для друзей из социальных сетей.</p>
+       </div>    
+   </footer>
+   <div class="write_us"> <!-- write us -->
+     <div class="inner_write_us">
+     <h3>Напишите нам</h3>
+     <button class="write_us_close" type="button" aria-label="закрыть форму обратной связи">
+       <img class="close_cross" src="img/close-cross.svg" alt="закрыть" width="21" height="21">
+     </button>
+     <form class="write_us_form" action="https://echo.htmlacademy.ru" method="POST">
+       <div class="form_input_flex">
+         <p>
+         <label for="name">Ваше имя:</label>
+         <input type="text" name="name" id="name" placeholder="Имя Фамилия" aria-label="поле для имени" autofocus>
+         </p>
+         <p>
+         <label for="e-mail">Ваш e-mail:</label>
+         <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="поле для емайл">
+         </p>
+         <p>
+         <label for="message">Текст письма:</label>
+         <textarea name="message" id="message" placeholder="В свободной форме" aria-label="поле для сообщения"></textarea>
+         </p>
+       </div>
+       <input class="button btn_write_us red" type="submit" value="Отправить" aria-label="отправить">
+     </form>
+     </div>
+   </div>
+   <div class="popup_map" id="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A16ddab70a2a0ea7709f4fe6252076162b646cd7351d39cf9fce69787b27f021e&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+     <button class="popup_map_close" type="button" aria-label="закрыть карту">
+       <img class="close_cross" src="img/close-cross.svg" alt="закрыть" width="21" height="21">
+     </button>
+   </div>
+  <script src="js/min-js.js"></script>
   </body>
 </html>
